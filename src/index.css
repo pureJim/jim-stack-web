@@ -1,0 +1,66 @@
+@import url('./styles/variable.css');
+
+@font-face {
+  font-family: 'TestSohne-Buch';
+  font-style: normal;
+  src: url('./assets/fonts/TestSöhne-Buch.otf');
+  font-display: swap; /* or block, swap, fallback, optional */
+}
+
+@font-face {
+  font-family: 'TestSohne';
+  font-style: normal;
+  src: url('./assets/fonts/TestSöhne-Kräftig.otf');
+  font-display: swap; /* or block, swap, fallback, optional */
+}
+
+@font-face {
+  font-family: 'PPFraktionSans-Variable';
+  font-style: normal;
+  src: url('./assets/fonts/PPFraktionSans-Variable.ttf');
+  font-display: swap; /* or block, swap, fallback, optional */
+}
+
+html,
+body {
+  height: 100%;
+  color: var(--color-font);
+  font-family: var(--font);
+  background-color: var(--bg-color);
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #d6d9e4;
+    border: none;
+    border-radius: 8px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background-color: #d6d9e4;
+  }
+}
+
+a {
+  color: var(--theme-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--theme-color);
+}
