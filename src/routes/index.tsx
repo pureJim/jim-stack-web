@@ -5,7 +5,7 @@ import ErrorPge from '@/components/ErrorPge';
 import MainLayout from '@/layouts/Main';
 import PlainLayout from '@/layouts/Plain';
 
-import LazyLoad from './lazy-load';
+import LazyLoad from './loader/lazy-load';
 import MainRoutes from './main';
 import PlainRoutes from './Plain';
 

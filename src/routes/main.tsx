@@ -1,8 +1,8 @@
 import { lazy } from 'react';
-import { RouteObject } from 'react-router';
+import type { RouteObject } from 'react-router';
 
-import LazyLoad from './lazy-load';
 import AuthLoader from './loader/auth-loader';
+import LazyLoad from './loader/lazy-load';
 
 const MainRoutes: RouteObject[] = [
   {
