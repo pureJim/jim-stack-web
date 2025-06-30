@@ -1,22 +1,17 @@
+/* 定义实际存在的字体文件 */
 @font-face {
-  font-family: 'TestSohne-Buch';
+  font-family: 'HarmonyOS_Sans_Regular';
   font-style: normal;
-  src: url('../assets/fonts/TestSöhne-Buch.otf');
-  font-display: swap; /* or block, swap, fallback, optional */
+  src: url('../assets/fonts/HarmonyOS_Sans_Regular.ttf');
+  font-display: swap;
 }
 
 @font-face {
-  font-family: 'TestSohne';
+  font-family: 'HarmonyOS_Sans_Bold';
   font-style: normal;
-  src: url('../assets/fonts/TestSöhne-Kräftig.otf');
-  font-display: swap; /* or block, swap, fallback, optional */
-}
-
-@font-face {
-  font-family: 'PPFraktionSans-Variable';
-  font-style: normal;
-  src: url('../assets/fonts/PPFraktionSans-Variable.ttf');
-  font-display: swap; /* or block, swap, fallback, optional */
+  font-weight: bold;
+  src: url('../assets/fonts/HarmonyOS_Sans_Bold.ttf');
+  font-display: swap;
 }
 
 :root {

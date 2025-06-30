@@ -78,8 +78,10 @@ export default defineConfig(({ mode }) => {
       cssCodeSplit: true, // css 代码分割
       sourcemap: !isProd,
       chunkSizeWarningLimit: 1024, // 警告阈值
+      assetsInlineLimit: 4096, // 小于4kb的资源内联为base64
+      target: 'esnext', // 现代浏览器支持
       rollupOptions: {
-        experimentalLogSideEffects: true, // 实验性功能，用于分析包大小
+        // experimentalLogSideEffects: true, // 注释掉以减少副作用警告
         output: {
           experimentalMinChunkSize: 1024, // 最小块大小
           chunkFileNames: 'assets/js/[name]-[hash].js',
@@ -181,6 +183,13 @@ export default defineConfig(({ mode }) => {
         compress: {
           drop_console: isProd,
           pure_funcs: ['console.log'],
+          drop_debugger: isProd,
+        },
+        mangle: {
+          safari10: true,
+        },
+        output: {
+          comments: false,
         },
       },
     },
